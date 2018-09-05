@@ -1,4 +1,7 @@
 <?php
+
+    include 'controllers/main-controllers.php';
+
     $pages = scandir('views/');
     if(isset($_GET['view']) && !empty($_GET['view'])){
         if(in_array($_GET['view'].'.php',$pages)){
