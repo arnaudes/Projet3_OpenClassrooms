@@ -1,5 +1,8 @@
 <?php
- include 'models/wrap_header.php';
+/**
+ * récupère le model du header pour afficher la bannière
+ */
+include 'models/wrap_error.php';
 ?>
     <section class="wrapper style5" style="text-align: center">
         <div class="inner">

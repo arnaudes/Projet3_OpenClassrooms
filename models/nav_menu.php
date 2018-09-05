@@ -11,8 +11,8 @@
                     <div id="menu">
                         <ul>
                             <li></li>
-                            <li><a href="index.php?view=home">Accueil</a></li>
-                            <li><a href="chapitres.html">Les Chapitres</a></li>
+                            <li><a href="?view=home">Accueil</a></li>
+                            <li><a href="?view=chapitres">Les Chapitres</a></li>
                             <li><a href="#">L'auteur</a></li>
                             <li></li>
                         </ul>
