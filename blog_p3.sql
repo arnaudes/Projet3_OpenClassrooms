@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Sep 05, 2018 at 06:26 PM
+-- Generation Time: Sep 06, 2018 at 08:51 AM
 -- Server version: 5.6.38
 -- PHP Version: 7.2.1
 
@@ -25,7 +25,6 @@ CREATE TABLE `admins` (
   `name` varchar(255) NOT NULL,
   `email` varchar(255) NOT NULL,
   `password` varchar(255) NOT NULL,
-  `token` varchar(255) NOT NULL,
   `role` varchar(255) NOT NULL DEFAULT 'modo'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
@@ -33,8 +32,8 @@ CREATE TABLE `admins` (
 -- Dumping data for table `admins`
 --
 
-INSERT INTO `admins` (`id`, `name`, `email`, `password`, `token`, `role`) VALUES
-(1, 'Arnaud', 'arnauddesvignes@icloud.com', '5602a5909eb263a873e418f07411cb64900a516c', '', 'admin');
+INSERT INTO `admins` (`id`, `name`, `email`, `password`, `role`) VALUES
+(1, 'Jean Forteroche', 'arnauddesvignes@icloud.com', '5602a5909eb263a873e418f07411cb64900a516c', 'admin');
 
 -- --------------------------------------------------------
 
