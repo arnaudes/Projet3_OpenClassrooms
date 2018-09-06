@@ -3865,6 +3865,7 @@ button.succes:active,
 	text-align: center;
 }
 
+
 		#main > header h2 {
 			font-size: 1.75em;
 			margin: 0 0 0.5em 0;
@@ -4058,12 +4059,13 @@ button.succes:active,
     background-image:         linear-gradient(to bottom, #dff0d8 0%, #c8e5bc 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffdff0d8', endColorstr='#ffc8e5bc', GradientType=0);
     background-repeat: repeat-x;
-    border: darkgreen 2px solid;
+    border: #d6e9c6 2px solid;
     border-radius: 4px;
     margin-left: 3%;
     margin-right: 3%;
     margin-top: 1%;
     margin-bottom: 1%;
+	text-align: center;
 }
 .alert-success hr {
     border-top-color: #c9e2b3;
@@ -4080,12 +4082,13 @@ button.succes:active,
     background-image:         linear-gradient(to bottom, #d9edf7 0%, #b9def0 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffd9edf7', endColorstr='#ffb9def0', GradientType=0);
     background-repeat: repeat-x;
-    border: blue 2px solid;
+    border: #bce8f1 2px solid;
     border-radius: 4px;
     margin-left: 3%;
     margin-right: 3%;
     margin-top: 1%;
     margin-bottom: 1%;
+	text-align: center;
 }
 .alert-info hr {
     border-top-color: #a6e1ec;
@@ -4102,12 +4105,13 @@ button.succes:active,
     background-image:         linear-gradient(to bottom, #fcf8e3 0%, #f8efc0 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fffcf8e3', endColorstr='#fff8efc0', GradientType=0);
     background-repeat: repeat-x;
-    border: darkorange 2px solid;
+    border: #faebcc 2px solid;
     border-radius: 4px;
     margin-left: 3%;
     margin-right: 3%;
     margin-top: 1%;
     margin-bottom: 1%;
+	text-align: center;
 }
 .alert-warning hr {
     border-top-color: #f7e1b5;
@@ -4124,12 +4128,13 @@ button.succes:active,
     background-image:         linear-gradient(to bottom, #f2dede 0%, #e7c3c3 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff2dede', endColorstr='#ffe7c3c3', GradientType=0);
     background-repeat: repeat-x;
-    border: #f2091c 2px solid;
+    border: #ebccd1 2px solid;
     border-radius: 4px;
     margin-left: 3%;
     margin-right: 3%;
     margin-top: 1%;
     margin-bottom: 1%;
+	text-align: center;
 }
 .alert-danger hr {
     border-top-color: #e4b9c0;
