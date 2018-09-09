@@ -17,7 +17,7 @@
                             <li></li>
                         </ul>
                         <ul>
-                            <li><a href="admin.html" class="button primary icon fa-lock">Administration</a></li>
+                            <li><a href="admin/index.php" class="button primary icon fa-lock">Administration</a></li>
                         </ul>
                     </div>
                 </li>

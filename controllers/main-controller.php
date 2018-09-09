@@ -1,4 +1,5 @@
 <?php
+session_start();
 /**
  * déclaration des objets
  * changer la valeur des objets en cas de changement de BDD (par exemple)

@@ -1,6 +1,6 @@
 <?php
 /**
- * si le post n'existe pas, on redirige vers la page erreur
+ * si le post n'existe pas, ou posted = 0, on redirige vers la page erreur
  */
 if($post == false){
     header("Location:index.php?view=error");
