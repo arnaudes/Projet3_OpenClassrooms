@@ -13,7 +13,7 @@ include 'models/wrap_chapitres.php';
         </header>
         <p><span class="image right"><img src="images/posts/<?= $post->image ?>" alt="<?= $post->title ?>" /></span><?= substr(nl2br($post->content),0,700); ?>...</p>
             <ul class="actions stacked" style="text-align: right">
-                <li><a href="?view=post&id=<?= $post->id ?>" class="button primary icon fa-eye">Lire le chapitre complet</a></li>
+                <li><a href="?view=post&id=<?= $post->id ?>" class="btn btn-outline-primary"><i class="fa fa-eye"></i> Lire le chapitre complet</a></li>
             </ul>
         <hr>
 <?php

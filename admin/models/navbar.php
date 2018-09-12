@@ -10,6 +10,11 @@
             <li class="nav-item <?php echo ($page=="dashboard")?"active" : "";?>">
                 <a class="nav-link" href="?view=dashboard"><i class="material-icons">dashboard</i></a>
             </li>
+            <li class="nav-item <?php echo ($page=="write")?"active" : "";?>">
+                <a class="nav-link" href="?view=write"><i class="material-icons">edit</i></a>
+            </li>
+            <a class="nav-item nav-link" href="../index.php?view=chapitres">Quitter</a>
+            <a class="nav-item nav-link" href="?view=logout">Déconnexion</a>
         </ul>
     </div>
 </div>
