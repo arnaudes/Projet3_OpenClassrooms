@@ -14,7 +14,7 @@
             <td><?= substr($comment->comment, 0, 100); ?>...</td>
             <td>
                 <button type="button" class="btn btn-success" data-toggle="modal" data-target="#comment_validate<?=$comment->id?>"><i class="fas fa-check"></i></button>
-                <div class="modal fade" id="comment_validate<?=$comment->id?>" tabindex="-1" role="dialog" aria-labelledby="Voir l'article" aria-hidden="true">
+                <div class="modal fade" id="comment_validate<?=$comment->id?>" tabindex="-1" role="dialog" aria-labelledby="Valider le commentaire" aria-hidden="true">
                     <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
                         <div class="modal-content" style="text-align: center">
                             <div class="modal-header">
@@ -30,14 +30,14 @@
                             </div>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-secondary" data-dismiss="modal"><i class="fas fa-undo"></i> Annuler</button>
-                                <button type="button" class="btn btn-success validate_comment" data-dismiss="modal"><i class="fa fa-check"></i> Valider</button>
+                                <button id="<?=$comment->id?>" type="button"  class="btn btn-success validate_comment" data-dismiss="modal"><i class="fa fa-check"></i> Valider</button>
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#comment_delete<?=$comment->id?>"><i class="fas fa-trash"></i></button>
-                <div class="modal fade" id="comment_delete<?=$comment->id?>" tabindex="-1" role="dialog" aria-labelledby="Voir l'article" aria-hidden="true">
+                <div class="modal fade" id="comment_delete<?=$comment->id?>" tabindex="-1" role="dialog" aria-labelledby="supprimer le commentaire" aria-hidden="true">
                     <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
                         <div class="modal-content" style="text-align: center">
                             <div class="modal-header">
@@ -53,7 +53,7 @@
                             </div>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-secondary" data-dismiss="modal"><i class="fas fa-undo"></i> Annuler</button>
-                                <button type="button" class="btn btn-danger delete_comment" data-dismiss="modal"><i class="fa fa-trash"></i> Supprimer</button>
+                                <button id="<?=$comment->id?>" type="button" class="btn btn-danger delete_comment" data-dismiss="modal"><i class="fa fa-trash"></i> Supprimer</button>
                             </div>
                         </div>
                     </div>
