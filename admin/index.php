@@ -16,6 +16,8 @@ require 'controllers/autoload.php';
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="tinymce/js/tinymce/tinymce.min.js"></script>
     <title>Jean Forteroche | Administartion</title>
+    <link rel="shortcut icon" href="../images/favicon.png">
+
 
 </head>
 <!-- Navbar -->

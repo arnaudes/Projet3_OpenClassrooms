@@ -1,5 +1,4 @@
 <?php
-require 'models/contact.php';
 include 'models/wrap_author.php'
 ?>
 
@@ -17,12 +16,13 @@ include 'models/wrap_author.php'
                 Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec nulla diam, dapibus at porttitor id, blandit eu diam. Mauris et odio sit amet quam rutrum rhoncus non viverra tortor. Aliquam nec pretium purus, lacinia lobortis libero. Fusce non mattis enim. Duis mi ligula, vehicula viverra arcu nec, lobortis laoreet ex. Integer vitae egestas mi, at consequat sem. Maecenas vitae nisl tempus, faucibus sem in, vehicula justo.</p>
             </div>
             <div class="row gtr-50 gtr-uniform">
-               <div class="col-4" style="margin-top: 5%"><span class="image fit"><img src="images/author.jpg" alt="" /></span></div>
+               <div class="col-4" style="margin-top: 7%"><span class="image fit"><img src="images/author.jpg" alt="" /></span></div>
                 <div class="col-8">
                     <h4>Me contacter :</h4>
                     <form id="contact-form" onsubmit="submitForm(); return false;">
-                        <input type="text" name="demo-name" id="name" placeholder="Votre Nom" /><br/>
+                        <input type="text" name="demo-name" id="name" placeholder="Votre Nom et Prénom" /><br/>
                         <input type="email" name="email" id="email" placeholder="Votre Adresse Email" /><br/>
+                        <input type="text" name="email" id="subject" placeholder="Sujet de Votre Message" /><br/>
                         <textarea name="message" id="message" placeholder="Rédigez votre message" rows="5"></textarea><br/>
                         <button class="button primary icon fa-check" type="submit" name="submit" id="contact-submit"><span id="status"> Envoyer</span></button>
                     </form>

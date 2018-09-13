@@ -1,3 +1,5 @@
 <?php
     unset($_SESSION['admin']);
-    header("Location:../");
+    header("Location:../index.php");
+    ?>
+

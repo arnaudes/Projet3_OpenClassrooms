@@ -32,7 +32,7 @@ if(isset($_POST['submit'])){
         <?php
     }else{
         $_SESSION['admin'] = $email;
-        header("Location:index.php?view=dashboard");
+        header("Location:?view=dashboard");
     }
 }
 ?>

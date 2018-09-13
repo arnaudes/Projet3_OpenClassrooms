@@ -12,7 +12,7 @@
 
             </div>
             <div class="form-group-row">
-                <h5 style="text-align: center">Contennu de votre article :</h5>
+                <h5 style="text-align: center">Contenu de votre article :</h5>
                 <textearea name="content" id="mytextarea"><?= $post->content ?></textearea>
             </div><br/>
 

@@ -19,7 +19,7 @@ include 'models/wrap_post.php';
             <span class="image right">
                 <img src="images/posts/<?=$post->image?>" alt="<?=$post->title?>">
             </span>
-            <p><?= $post->content ?></p>
+            <p style="text-align: justify"><?= $post->content ?></p>
 
 <?php
 }
