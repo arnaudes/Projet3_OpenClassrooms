@@ -1,4 +1,4 @@
-<div class="container" style="margin-top: 5%">
+<div class="container">
     <div class="jumbotron" style="text-align: center">
         <h1 class="text-capitalize">Tableau de bord</h1>
     </div>

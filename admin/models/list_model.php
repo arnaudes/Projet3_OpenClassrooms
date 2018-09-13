@@ -6,7 +6,7 @@ foreach ($posts as $post){
     <div class="row">
         <div class="col-12 col-sm-6 col-md-8">
             <?= substr(nl2br($post->content),0, 750) ?>...
-            <br/> <br/> <a href="../index.php?view=post&id=<?=$post->id?>" class="btn btn-outline-success"><i class="fa fa-eye"></i> Voir</a>
+            <br/> <br/> <?php echo ($post->posted == "1")? " <a href='../index.php?view=post&id=<?=$post->id?>' class='btn btn-outline-success'><i class='fa fa-eye'></i> Voir</a>" : "" ?>
 
             <a href="?view=edit&id=<?=$post->id?>" class="btn btn-outline-primary"><i class="fa fa-edit"></i> Modifier</a>
             <button class="btn btn-outline-danger"  data-toggle="modal" data-target="#post_delete<?= $post->id ?>"><i class="fa fa-trash"></i> Supprimer</button>
