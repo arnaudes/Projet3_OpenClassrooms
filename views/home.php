@@ -26,7 +26,7 @@
             </header>
             <ul class="actions stacked" style="align-items: center">
                 <li><a href="?view=chapitres" class="button primary icon fa-paper-plane">Oui aller GO!</a></li>
-                <li><a href="#" class="button">En savoir plus sur l'auteur</a></li>
+                <li><a href="?view=author" class="button">En savoir plus sur l'auteur</a></li>
             </ul>
         </div>
     </section>

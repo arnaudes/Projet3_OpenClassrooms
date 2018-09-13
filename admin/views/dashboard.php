@@ -1,6 +1,6 @@
-<div class="container" style="margin-top: 3%">
+<div class="container" style="margin-top: 5%">
     <div class="jumbotron" style="text-align: center">
-        <h1 class="text-capitalize">Tableau de bord</h1><br/>
+        <h1 class="text-capitalize">Tableau de bord</h1>
     </div>
     <?php include 'models/dashboard_panel.php' ?>
 

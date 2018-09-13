@@ -6,18 +6,24 @@
 </button>
 <div class="collapse navbar-collapse justify-content-md-center" id="navbarNavAltMarkup">
     <div class="navbar-nav">
+        <?php
+        if (isset($_SESSION['admin'])){
+        ?>
         <ul class="navbar-nav">
-            <li class="nav-item <?php echo ($page=="dashboard")?"active" : "";?>">
+            <li class="nav-item <?php echo ($page == "dashboard") ? "active" : ""; ?>">
                 <a class="nav-link" href="?view=dashboard"><i class="material-icons">dashboard</i></a>
             </li>
-            <li class="nav-item <?php echo ($page=="write")?"active" : "";?>">
+            <li class="nav-item <?php echo ($page == "write") ? "active" : ""; ?>">
                 <a class="nav-link" href="?view=write"><i class="material-icons">edit</i></a>
             </li>
-            <li class="nav-item <?php echo ($page=="list")?"active" : "";?>">
+            <li class="nav-item <?php echo ($page == "list") ? "active" : ""; ?>">
                 <a class="nav-link" href="?view=list"><i class="material-icons">view_list</i></a>
             </li>
-            <a class="nav-item nav-link" href="../index.php?view=chapitres">Quitter</a>
             <a class="nav-item nav-link" href="?view=logout">Déconnexion</a>
+            <a class="nav-item nav-link" href="../index.php?view=chapitres">Quitter</a>
+            <?php
+            }
+            ?>
         </ul>
     </div>
 </div>

@@ -1,9 +1,9 @@
 
 
 
-<div class="container" style="margin-top: 3%">
+<div class="container" style="margin-top: 5%">
     <div class="jumbotron" style="text-align: center">
-        <h1 class="text-capitalize">Poster un article</h1>
+        <h1 class="text-capitalize">Rédiger un article</h1>
     </div>
     <?php include 'models/write_form.php' ?>
     <form method="post" enctype="multipart/form-data">
