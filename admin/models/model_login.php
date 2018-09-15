@@ -32,7 +32,9 @@ if(isset($_POST['submit'])){
         <?php
     }else{
         $_SESSION['admin'] = $email;
-        header("Location:?view=dashboard");
+        ?>
+        <script>window.location.replace("index.php?view=dashboard")</script>
+        <?php
     }
 }
 ?>

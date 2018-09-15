@@ -20,7 +20,7 @@ if(isset($_POST['post'])){
     }else{
         edit($title,$content,$posted,$_GET['id']);
         ?>
-        <script>window.location.replace("index.php?view=edit&id=<?=$_GET['id']?>");</script>
+        <script>window.location.replace("index.php?view=list")</script>
         <?php
     }
 }

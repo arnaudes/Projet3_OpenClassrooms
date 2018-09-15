@@ -1,5 +1,5 @@
 <?php
     unset($_SESSION['admin']);
-    header("Location:../index.php");
     ?>
+    <script>window.location.replace("../index.php?view=home")</script>
 
