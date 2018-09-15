@@ -1,3 +1,6 @@
+/**
+ * initialisation de tinymce ( avec le selecteur "id" du textarea, le skin custom, la hauteur, la langue fr)
+ */
 tinymce.init({
     selector: '#mytextarea',
     skin: 'custom',

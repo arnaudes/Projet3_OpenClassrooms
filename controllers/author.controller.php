@@ -1,5 +1,9 @@
 <?php
-
+/**
+ * Vérifie les données envoyées lors de l'envoie du formulaire sur la page 'author'
+ * Puis met en form le mail Qui sera envoyé à l'adresse du propriétaire du site.
+ * si tout est OK on affiche le message 'succes' qui est dans 'js/author.func.js'
+ */
 if(isset($_POST['name']) && isset($_POST['email']) && isset($_POST['subject']) && isset($_POST['message'])){
     $name = htmlspecialchars($_POST['name']);
     $email = htmlspecialchars($_POST['email']);
@@ -14,7 +18,7 @@ if(isset($_POST['name']) && isset($_POST['email']) && isset($_POST['subject']) &
     if(mail($to, $subject, $message_format, $headers)){
         echo "success";
     }else{
-        echo "The server failed to send teh message. Please try again later.";
+        echo "The server failed to send the message. Please try again later.";
     }
 }
 ?>

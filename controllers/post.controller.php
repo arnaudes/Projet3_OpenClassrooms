@@ -52,7 +52,7 @@ function comment($name, $email, $comment){
 
 /**
  * @return array
- * récupére tout les commentaires dépendants d'un post
+ * récupére tout les commentaires dépendants d'un post du plus récent au plus ancien
  */
 function get_comments(){
     global $db;

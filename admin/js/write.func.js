@@ -1,3 +1,6 @@
+/**
+ * initialisation de tinymce ( avec le selecteur "id" du textarea, le skin custom, la hauteur, la langue fr)
+ */
 tinymce.init({
     selector: '#mytextarea',
     skin: 'custom',
@@ -7,6 +10,9 @@ tinymce.init({
 
 });
 
+/**
+ * Fonction pour afficher le selecteur de document.
+ */
 function bs_input_file() {
     $(".input-file").before(
         function() {

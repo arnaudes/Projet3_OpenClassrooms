@@ -1,5 +1,9 @@
 <?php
-
+/**
+ * @return array
+ * récupère les article dans la table 'posts' quand ceux-ci on le statut posté
+ * where posted = "1"
+ */
     function get_posts(){
 
         global $db;

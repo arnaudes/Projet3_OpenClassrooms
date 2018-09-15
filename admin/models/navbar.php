@@ -1,4 +1,4 @@
-
+<!-- Code html de la nav-bar  -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark"">
 <a class="navbar-brand" href="#">JEAN FORTEROCHE | ADMINISTRATION</a>
 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -7,6 +7,10 @@
 <div class="collapse navbar-collapse justify-content-md-center" id="navbarNavAltMarkup">
     <div class="navbar-nav">
         <?php
+        /**
+         * on Vérifie que la session est 'admin' pour afficher les bouton
+         * si la session n'est pas admin, la bar sera vide.
+         */
         if (isset($_SESSION['admin'])){
         ?>
         <ul class="navbar-nav">

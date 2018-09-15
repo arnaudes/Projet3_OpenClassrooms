@@ -9,6 +9,9 @@ if($post == false){
  * récupère le model du header pour afficher la bannière
  */
 include 'models/wrap_post.php';
+/**
+ * Code html d'affichage d'un post + commentaire(s).
+ */
 ?>
     <section class="wrapper style5">
     <div class="inner">

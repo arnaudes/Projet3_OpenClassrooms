@@ -1,4 +1,9 @@
-<?php $comments = get_reported_comments(); ?>
+<?php
+/**
+ * Affichage html de(s) commentaire(s) signalé(s) dans le tableau du dashboard
+ * contient egalement les deux boîtes modals "validé" et "supprimer" un commentaire signalé.
+ */
+$comments = get_reported_comments(); ?>
 <table class="table">
     <thead>
     <tr>

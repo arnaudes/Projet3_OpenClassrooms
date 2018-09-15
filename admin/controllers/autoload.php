@@ -7,7 +7,7 @@ include '../controllers/main-controller.php';
 
 /**
  * scan le directory views/ pour y trouver les pages à afficher
- * si aucun nom ne correspond on affiche un message d'erreur
+ * si aucun nom ne correspond on affiche un message d'erreur, la page par deffault est la page "dashboard"
  */
 $pages = scandir('views/');
 if(isset($_GET['view']) && !empty($_GET['view'])){

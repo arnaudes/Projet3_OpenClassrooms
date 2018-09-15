@@ -1,6 +1,12 @@
 
 <?php
-
+/**
+ * vérifications de données envoyé lors de la rédaction d'un article
+ * vérifie si le champs tittre et contenu ne sont pas vides, si il le sont on affiche une erreur
+ * Vérifie si l'extension correspond bien a un image valide, si ce n'est pas le cas on affiche une erreur.
+ * ATTENTION, par défault si aucune image n'est selectionné, ce sra l'image post.png qui sera séléctionné par défaut dans la bdd!
+ * si tout est bon, on redirige l'utilisateur vers la page 'list'.
+ */
 if(isset($_POST['post'])) {
     $title = htmlspecialchars(trim($_POST['title']));
     $content = (trim($_POST['mytextarea']));
@@ -39,7 +45,9 @@ if(isset($_POST['post'])) {
 
         }else{
             $id = $db->lastInsertId();
-            header("Location:index.php?view=post&id=".$id);
+            ?>
+            <script>window.location.replace("index.php?view=list")</script>
+            <?php
         }
     }
 }

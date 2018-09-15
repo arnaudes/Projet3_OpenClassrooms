@@ -1,8 +1,10 @@
+#Indication
+Pour recompiler le projet et utiliser le backoffice, veillez a entrer dans la table admins.password votre mot de passe haché en SHA1.
+Avant ou apres l'importation du de la bdd 'projet_3.sql'
+
 #Blog Projet 3 Openclassrooms
 
 ###Enoncé du projet :
-
-Énoncé
 
  Vous venez de décrocher un contrat avec Jean Forteroche, acteur et écrivain. Il travaille actuellement sur son prochain roman, "Billet simple pour l'Alaska". Il souhaite innover et le publier par épisode en ligne sur son propre site.
 

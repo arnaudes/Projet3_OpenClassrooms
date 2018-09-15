@@ -1,8 +1,17 @@
 <?php
+/**
+ * Si la session est deja 'admin' pas besoin de login, on redirige vers le dashboard.
+ */
 if(isset($_SESSION['admin'])){
     header("Location:index.php?view=dashboard");
 }
 
+/**
+ * Vérification des données envoyées lors du 'submit'
+ * vérifie l'email et le password
+ * si un champs est vide, on affiche les erreurs.
+ * si tout est correct et que la session deviens 'admin', alors on redirige l'utilisateur vers 'dashboard'
+ */
 if(isset($_POST['submit'])){
     $email = htmlspecialchars(trim($_POST['email']));
     $password = htmlspecialchars(trim($_POST['password']));

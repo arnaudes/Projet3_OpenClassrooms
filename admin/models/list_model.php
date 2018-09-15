@@ -1,4 +1,7 @@
 <?php
+/**
+ * Affichage html de articles dans la page 'list'.
+ */
 foreach ($posts as $post){
     ?>
     <div id="post_<?= $post->id ?>">

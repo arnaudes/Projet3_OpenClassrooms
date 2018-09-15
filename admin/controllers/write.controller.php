@@ -1,5 +1,11 @@
 <?php
-
+/**
+ * @param $title
+ * @param $content
+ * @param $posted
+ * Fonction pour entrer en bdd un nouvel article
+ * (insèrt dans la bdd, le titre, le contenu, l'auteur (=l'admin), la date NOW(), et si le post est en 'Public' ou non)
+ */
 function post($title, $content, $posted){
 
     global $db;
@@ -22,6 +28,11 @@ function post($title, $content, $posted){
 
 }
 
+/**
+ * @param $tmp_name
+ * @param $extension
+ * Fonction pour uploader l'image dans le dossier "../images/posts/" puis change le nom avec l'id.l'extension
+ */
 function post_img($tmp_name, $extension){
 
     global $db;
@@ -36,5 +47,7 @@ function post_img($tmp_name, $extension){
     $req = $db->prepare($sql);
     $req->execute($i);
     move_uploaded_file($tmp_name, "../images/posts/".$id.$extension);
-    header("Location:index.php?view=post&id=".$id);
+    ?>
+    <script>window.location.replace("index.php?view=list")</script>
+    <?php
 }

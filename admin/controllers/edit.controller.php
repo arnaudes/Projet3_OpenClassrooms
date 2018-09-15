@@ -1,5 +1,9 @@
 <?php
-
+/**
+ * @return mixed
+ * récupère en bdd les articles quand l'id de l'article = l'id indiqué dans l'url.
+ * si l'id ne correspond à aucun post dans la bdd, on redirige vers la page erreur.
+ */
 function get_post(){
     global $db;
 
@@ -24,7 +28,13 @@ $post = get_post();
 if($post == false){
     header("Location: index.php?view=error");
 }
-
+/**
+ * @param $title
+ * @param $content
+ * @param $posted
+ * @param $id
+ * Fonction pour update un article.
+ */
 function edit($title, $content, $posted, $id){
 
     global $db;

@@ -1,10 +1,12 @@
 <div class="card-deck">
 <?php
+/**
+ * Utilise le selecteur de couleur pour les card du dashboard
+ */
 $tables = [
     "Publications"    => "posts",
     "Commentaires"    => "comments"
 ];
-
 $colors = [
     "posts" => "bg-primary",
     "comments" => "bg-success"

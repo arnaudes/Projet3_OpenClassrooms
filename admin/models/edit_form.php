@@ -1,4 +1,10 @@
 <?php
+/**
+ * Réponse au bouton 'post' de la page de modification d'un article
+ * vérifie ce qui est posté
+ * affiche les erreur en cas de champs manquant
+ * si tout est correct, l'article est modifié et on redirige vers la page 'list' de l'admin.
+ */
 if(isset($_POST['post'])){
     $title = htmlspecialchars(trim($_POST['title']));
     $content = (trim($_POST['mytextarea']));
