@@ -14,26 +14,35 @@ include 'models/wrap_post.php';
  */
 ?>
     <section class="wrapper style5">
-    <div class="inner">
-        <header>
-            <h2>posté par : <?= $post->name ?></h2>
-            <p>Le <em><?= date("d/m/Y à H:i", strtotime($post->date)); ?></em></p>
-        </header>
-            <span class="image right">
-                <img src="images/posts/<?=$post->image?>" alt="<?=$post->title?>">
-            </span>
-            <p style="text-align: justify"><?= $post->content ?></p>
+        <div class="inner">
+            <header>
+                <h2>posté par : <?= $post->name ?></h2>
+                <p>Le <em><?= date("d/m/Y à H:i", strtotime($post->date)); ?></em></p>
+            </header>
+                <span class="image right">
+                    <img src="images/posts/<?=$post->image?>" alt="<?=$post->title?>">
+                </span>
+                <p style="text-align: justify"><?= $post->content ?></p>
 
 <?php
 }
 ?>
-
-    <hr>
-    <h4>Commentaires :</h4>
+        </div>
+    </section>
+    <section id="one" class="wrapper style2 special">
+            <div class="inner">
+                <header class="major">
+                    <h2 style="text-align: center">Commentaire(s) :</h2>
+                </header>
+            </div>
+    </section>
+    <section class="wrapper style5">
+        <div class="inner">
 <?php include 'models/comments.php' ?>
-    <hr>
-    <h4>Commenter :</h4>
+            <hr>
+            <h4>Commenter :</h4>
 
 <?php include 'models/form_comments.php'; ?>
-    </div>
+        </div>
     </section>
+
