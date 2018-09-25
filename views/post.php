@@ -3,7 +3,9 @@
  * si le post n'existe pas, ou posted = 0, on redirige vers la page erreur
  */
 if($post == false){
-    header("Location:index.php?view=error");
+    ?>
+    <script>window.location.replace("index.php?view=error")</script>
+    <?php
 }else{
 /**
  * récupère le model du header pour afficher la bannière
@@ -15,7 +17,8 @@ include 'models/wrap_post.php';
 ?>
     <section class="wrapper style5">
         <div class="inner">
-            <header>
+            <a href="?view=chapitres" class="btn btn-outline-dark" style="margin-top: -13%"><i class="fas fa-undo"></i> Retour</a>
+            <header style="margin-top: -3%">
                 <h2>posté par : <?= $post->name ?></h2>
                 <p>Le <em><?= date("d/m/Y à H:i", strtotime($post->date)); ?></em></p>
             </header>
@@ -23,7 +26,7 @@ include 'models/wrap_post.php';
                     <img src="images/posts/<?=$post->image?>" alt="<?=$post->title?>">
                 </span>
                 <p style="text-align: justify"><?= $post->content ?></p>
-
+            <a href="?view=chapitres" class="btn btn-outline-dark"><i class="fas fa-undo"></i> Retour</a>
 <?php
 }
 ?>
@@ -39,8 +42,7 @@ include 'models/wrap_post.php';
     <section class="wrapper style5">
         <div class="inner">
 <?php include 'models/comments.php' ?>
-            <hr>
-            <h4>Commenter :</h4>
+
 
 <?php include 'models/form_comments.php'; ?>
         </div>

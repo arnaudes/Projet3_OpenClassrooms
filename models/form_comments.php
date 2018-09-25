@@ -1,8 +1,9 @@
+<hr>
 <?php
     require 'controllers/form_comments.controller.php';
 ?>
-
 <form method="post">
+    <h4>Commenter :</h4>
     <div class="row gtr-uniform">
         <div class="col-6 col-12-small">
             <input type="text" name="name" id="name" value="" placeholder="Votre Nom" />
@@ -14,7 +15,7 @@
             <textarea name="comment" id="comment" value="" placeholder="Contenu de votre commentaire"></textarea>
         </div>
         <div>
-            <button type="submit" name="submit" class="button primary">Commenter ce post</button>
+            <button  type="submit" name="submit" class="button primary">Commenter ce post</button>
         </div>
     </div>
 </form>

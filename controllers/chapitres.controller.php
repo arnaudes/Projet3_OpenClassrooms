@@ -19,6 +19,7 @@
         JOIN admins
         ON posts.writer = admins.email
         WHERE posts.posted='1'
+        ORDER BY date ASC 
         ");
 
         $results = array();

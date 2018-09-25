@@ -1,4 +1,7 @@
 <?php
+/**
+ * require de l'autoloader pour afficher le contenu de la page ('views/$page.php')
+ */
  require 'controllers/autoload.php';
 ?>
 
@@ -18,14 +21,13 @@
 <body class="landing is-preload">
 <!-- Page Wrapper -->
 <div id="page-wrapper">
-    <!-- Page Wrapper -->
     <?php include 'models/nav_menu.php'; ?>
     <?php include 'views/'.$page.'.php'; ?>
+
     <!-- Footer -->
     <?php include 'models/footer.php'; ?>
 
 </div>
-<!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 <script src="assets/js/jquery.min.js"></script>

@@ -1,7 +1,4 @@
-<!-- Page Wrapper -->
-<div id="page-wrapper">
-
-    <!-- nav bar & menu -->
+<!-- nav bar & menu -->
     <header id="header" class="alt">
         <h1><a href="../index.php">BILLET SIMPLE POUR L'ALASKA</a></h1>
         <nav id="nav">
